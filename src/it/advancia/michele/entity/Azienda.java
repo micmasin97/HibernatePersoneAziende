@@ -21,4 +21,36 @@ public class Azienda
 	private String cittaSede;
 	@OneToMany(mappedBy="azienda",cascade=CascadeType.ALL)
 	private Collection<PersonaAssunta> listaPersonale= new ArrayList<PersonaAssunta>();
+	public long getCodice()
+	{
+		return codice;
+	}
+	public void setCodice(long codice)
+	{
+		this.codice = codice;
+	}
+	public String getNome()
+	{
+		return Nome;
+	}
+	public void setNome(String nome)
+	{
+		Nome = nome;
+	}
+	public String getCittaSede()
+	{
+		return cittaSede;
+	}
+	public void setCittaSede(String cittaSede)
+	{
+		this.cittaSede = cittaSede;
+	}
+	public Collection<PersonaAssunta> getListaPersonale()
+	{
+		return listaPersonale;
+	}
+	public void setListaPersonale(Collection<PersonaAssunta> listaPersonale)
+	{
+		this.listaPersonale = listaPersonale;
+	}
 }

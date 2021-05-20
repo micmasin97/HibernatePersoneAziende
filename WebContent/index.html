@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="execution.js"></script>		
+</head>
+<body>
+	<p>CercaPersona</p>
+	<form action="EntityServlet" method="post">
+		<input type="text" name="CFSearch" placeholder="Codice Fiscale"><br>
+		<input type="submit" name="submit" value="searchPersona"><br>
+	</form>
+	
+	
+	<p>CercaDipendenti</p>
+	<form action="EntityServlet" method="post">
+		<input type="text" name="idAzienda" placeholder="Id Azienda"><br>
+		<input type="submit" name="submit" value="searchDipendenti"><br>
+	</form>
+	<p>InserisciPersona</p>
+	<form action="EntityServlet" method="post">
+		<input type="text" name="CFNew" placeholder="Codice Fiscale"><br>
+		<input type="text" name="nomeNew" placeholder="Nome"><br>
+		<input type="text" name="cognomeNew" placeholder="Cognome"><br>
+		ruolo: <select name="ruoloNew" id="selectNew" onchange="filter(1)">
+		<option value="dip">dipendente</option>
+		<option value="ext">visitatore</option>
+		</select><br>
+		<input type="number" name="stipendioNew" id="stipendioNew" placeholder="Stipendio"><br>
+		<input type="number" name="idAziendaNew" id="idAziendaNew" placeholder="id Azienda"><br>
+		
+		<input type="submit" name="submit" value="insertPersona"><br> 
+	</form>
+	
+	<p>ModificaPersona</p>
+	<form action="EntityServlet" method="post">
+		<input type="text" name="CFUpd" placeholder="Codice Fiscale"><br>
+		<input type="text" name="nomeUpd" placeholder="Nome"><br>
+		<input type="text" name="cognomeUpd" placeholder="Cognome"><br>
+		ruolo: <select name="ruoloUpd" id="selectUpd" onchange="filter(2)">
+		<option value="dip">dipendente</option>
+		<option value="ext">visitatore</option>
+		</select><br>
+		<input type="number" name="stipendioNew" id="stipendioUpd" placeholder="Stipendio"><br>
+		
+		<input type="submit" name="submit" value="updatePersona"><br> 
+	</form>
+</body>
+</html>

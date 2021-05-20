@@ -43,7 +43,7 @@
 <!-- create: Drop and re-create the database schema on startup -->
 <!-- update: Modify the schema only if changes happens -->
 
-<property name="hbm2ddl.auto">create</property>
+<property name="hbm2ddl.auto">update</property>
 
 <mapping class="it.advancia.michele.entity.Indirizzo"/>
 <mapping class="it.advancia.michele.entity.Persona"/>

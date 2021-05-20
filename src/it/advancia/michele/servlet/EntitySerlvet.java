@@ -29,8 +29,8 @@ public class EntitySerlvet extends HttpServlet {
 		persona.setCognome("masin");
 		Indirizzo indirizzo = new Indirizzo();
 		indirizzo.setRegione("Veneto");
-		indirizzo.setCitt‡("Villa Bartolomea");
-		indirizzo.setVia("Prasara");
+		indirizzo.setCitt√†("legnago");
+		indirizzo.setVia("prova");
 		indirizzo.setCivico("10");
 		persona.getIndirizzi().add(indirizzo);
 		session.beginTransaction();
